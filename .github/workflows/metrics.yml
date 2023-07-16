@@ -27,7 +27,7 @@ jobs:
           user: chev2
           template: classic
           base: header, metadata
-          config_display: large
+          config_display: columns
           config_octicon: yes
           config_order: base.header, base.activity+community, base.repositories, topics, languages, activity, licenses, pagespeed
           config_padding: 6, 12 + 11%
@@ -57,4 +57,7 @@ jobs:
           plugin_topics_limit: 15
           plugin_topics_mode: icons
           plugin_topics_sort: stars
-          plugin_licenses: yes
+          extras_css: |
+            h1, h2, h3, h4, h5, h6 {
+              color: hsl(214.1, 100%, 76.9%);
+            }
