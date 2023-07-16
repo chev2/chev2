@@ -27,10 +27,11 @@ jobs:
           user: chev2
           template: classic
           base: header, metadata
+          clean_workflows: all
           config_display: large
           config_octicon: yes
           config_order: base.header, base.activity+community, base.repositories, topics, languages, activity, licenses, pagespeed
-          config_padding: 16, 24 + 11%
+          config_padding: 0, 8 + 11%
           config_timezone: America/Los_Angeles
           config_twemoji: yes
           plugin_activity: yes
