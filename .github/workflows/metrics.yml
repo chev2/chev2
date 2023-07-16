@@ -26,12 +26,12 @@ jobs:
           # Options
           user: chev2
           template: classic
-          base: header, metadata
+          base: header
           clean_workflows: all
           config_display: large
           config_octicon: yes
           config_order: base.header, base.activity+community, base.repositories, topics, languages, activity, licenses, pagespeed
-          config_padding: 4, 8 + 11%
+          config_padding: 4, 8
           config_timezone: America/Los_Angeles
           config_twemoji: yes
           plugin_activity: yes
@@ -61,7 +61,7 @@ jobs:
           plugin_topics_sort: stars
           extras_css: |
             /* Darken background */
-            foreignObject {
+            body {
                 background: rgba(0, 0, 0, 30%);
                 border-radius: 12px;
             }
@@ -73,7 +73,7 @@ jobs:
 
             /* Custom links color */
             .activity .repo, .activity .issue, .activity .commit .sha {
-                color: hsl(214, 100%, 90%) !important;
+                color: hsl(214, 33.9%, 76.9%) !important;
             }
 
             /* More vertical space between sections */
