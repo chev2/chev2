@@ -31,7 +31,7 @@ jobs:
           config_display: large
           config_octicon: yes
           config_order: base.header, base.activity+community, base.repositories, topics, languages, activity, licenses, pagespeed
-          config_padding: 0, 8 + 11%
+          config_padding: 4, 8 + 11%
           config_timezone: America/Los_Angeles
           config_twemoji: yes
           plugin_activity: yes
@@ -60,6 +60,34 @@ jobs:
           plugin_topics_mode: icons
           plugin_topics_sort: stars
           extras_css: |
+            /* Darken background */
+            foreignObject {
+                background: rgba(0, 0, 0, 30%);
+                border-radius: 12px;
+            }
+
+            /* Custom header color */
             h1, h2, h3, h4, h5, h6 {
-              color: hsl(214.1, 100%, 76.9%);
+              color: hsl(214, 100%, 76.9%);
+            }
+
+            /* Custom links color */
+            .activity .repo, .activity .issue, .activity .commit .sha {
+                color: hsl(214, 100%, 90%) !important;
+            }
+
+            /* More vertical space between sections */
+            .items-wrapper > section {
+                margin-bottom: 12px;
+            }
+
+            /* Bigger topics icons */
+            .topics img {
+                width: 32px;
+                height: 32px;
+            }
+
+            /* Div text color */
+            div {
+                color: hsl(0, 0%, 65%);
             }
