@@ -90,7 +90,8 @@ jobs:
               margin-bottom: 16px;
               padding: 4px 0px;
 
-              background: rgba(0, 0, 0, 30%);
+              /* background: rgba(0, 0, 0, 30%); */
+              background: rgb(9, 12, 16);
               border-radius: 16px;
             }
 
