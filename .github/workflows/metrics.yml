@@ -26,7 +26,7 @@ jobs:
           # Options
           user: chev2
           template: classic
-          base: header
+          base: header, activity, community
           clean_workflows: all
           config_display: large
           config_octicon: yes
@@ -45,8 +45,8 @@ jobs:
           plugin_languages_analysis_timeout: 15
           plugin_languages_analysis_timeout_repositories: 7.5
           plugin_languages_categories: markup, programming
-          plugin_languages_colors: github
-          plugin_languages_limit: 5
+          plugin_languages_colors: lua:#2531b3, cs:#4aa337, css:#7150a3
+          plugin_languages_limit: 7
           plugin_languages_other: yes
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_days: 14
@@ -60,34 +60,54 @@ jobs:
           plugin_topics_mode: icons
           plugin_topics_sort: stars
           extras_css: |
+            :root {
+              --piborder-color: white;
+            }
+
             /* Darken background */
-            body {
-                background: rgba(0, 0, 0, 30%);
-                border-radius: 12px;
+            svg, foreignObject {
+              background: rgba(0, 0, 0, 30%);
+              border-radius: 12px;
+            }
+
+            /* Center various elements */
+            section > .field, .topics {
+              justify-content: center;
             }
 
             /* Custom header color */
             h1, h2, h3, h4, h5, h6 {
-              color: hsl(214, 100%, 76.9%);
+              color: white;
             }
 
             /* Custom links color */
             .activity .repo, .activity .issue, .activity .commit .sha {
-                color: hsl(214, 33.9%, 76.9%) !important;
+              color: hsl(214, 100%, 76.9%) !important;
             }
 
-            /* More vertical space between sections */
-            .items-wrapper > section {
-                margin-bottom: 12px;
+            /* Sections spacing and backgrounds */
+            .items-wrapper > section, .items-wrapper > div {
+              margin-bottom: 16px;
+              padding: 4px 0px;
+
+              background: rgba(0, 0, 0, 30%);
+              border-radius: 16px;
             }
 
-            /* Bigger topics icons */
+            /* Bigger and customized topics icons */
             .topics img {
-                width: 32px;
-                height: 32px;
+              width: 32px;
+              height: 32px;
+              padding: 3px;
+
+              border-radius: 8px;
+
+              background: transparent;
+
+              filter: drop-shadow(1px 0px 0px var(--piborder-color)) drop-shadow(0px 1px 0px var(--piborder-color)) drop-shadow(-1px 0px 0px var(--piborder-color)) drop-shadow(0px -1px 0px var(--piborder-color));
             }
 
             /* Div text color */
             div {
-                color: hsl(0, 0%, 65%);
+              color: rgb(125, 133, 144);
             }
