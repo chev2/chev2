@@ -58,7 +58,7 @@ jobs:
           plugin_topics: yes
           plugin_topics_limit: 30
           plugin_topics_mode: icons
-          plugin_topics_sort: stars
+          plugin_topics_sort: starred
           extras_css: |
             :root {
               --piborder-color: white;
