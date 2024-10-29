@@ -36,7 +36,7 @@ jobs:
           config_twemoji: yes
           plugin_activity: yes
           plugin_activity_days: 30
-          plugin_activity_filter: all
+          plugin_activity_filter: push, issue, pr, ref/create, ref/delete, release, review, fork, star, public
           plugin_activity_limit: 5
           plugin_activity_load: 300
           plugin_activity_visibility: public
