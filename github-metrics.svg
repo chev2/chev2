@@ -33,8 +33,7 @@ h1, h2, h3, h4, h5, h6 {
  margin-bottom: 16px;
  padding: 4px 0px;
 
- background: rgba(0, 0, 0, 30%);
- background: rgb(9, 12, 16);
+ background: hsla(240deg, 21%, 10%, 70%);
  border-radius: 16px;
 }
 
