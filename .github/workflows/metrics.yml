@@ -45,8 +45,8 @@ jobs:
           plugin_languages_analysis_timeout: 15
           plugin_languages_analysis_timeout_repositories: 7.5
           plugin_languages_categories: markup, programming
-          plugin_languages_colors: lua:#2531b3, cs:#4aa337, css:#7150a3
-          plugin_languages_limit: 7
+          plugin_languages_colors: lua:#89b4fa, cs:#a6e3a1, css:#cba6f7, python:#74c7ec, javascript:#f9e2af
+          plugin_languages_limit: 8
           plugin_languages_other: yes
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_days: 14
@@ -102,15 +102,15 @@ jobs:
 
             /* Bigger and customized topics icons */
             .topics img {
-              width: 40px;
-              height: 40px;
+              width: 52px;
+              height: 52px;
               padding: 3px;
 
               border-radius: 8px;
 
               background: transparent;
 
-              filter: drop-shadow(1px 0px 0px var(--piborder-color)) drop-shadow(0px 1px 0px var(--piborder-color)) drop-shadow(-1px 0px 0px var(--piborder-color)) drop-shadow(0px -1px 0px var(--piborder-color));
+              filter: drop-shadow(3px 0px 0px var(--piborder-color)) drop-shadow(0px 3px 0px var(--piborder-color)) drop-shadow(-3px 0px 0px var(--piborder-color)) drop-shadow(0px -3px 0px var(--piborder-color));
             }
 
             /* Div text color */
