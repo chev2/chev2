@@ -32,7 +32,7 @@ jobs:
           config_display: large
           config_octicon: yes
           config_order: base.header, base.activity+community, base.repositories, topics, languages, activity, licenses, pagespeed
-          config_padding: 4, 8
+          config_padding: 4, 8 + 5%
           config_timezone: America/Los_Angeles
           config_twemoji: yes
           # plugin_activity: yes
@@ -68,7 +68,9 @@ jobs:
             /* Darken background */
             svg, foreignObject {
               /* background: rgba(0, 0, 0, 30%); */
-              border-radius: 12px;
+              background: #1e1e2e;
+              border-radius: 0px 0px 4px 4px;
+              border: 1px solid #313244;
             }
 
             /* Center various elements */
