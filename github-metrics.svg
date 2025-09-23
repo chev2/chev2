@@ -10,6 +10,7 @@
 /* Darken background */
 foreignObject {
  /bin /bin.usr-is-merged /boot /dev /etc /home /imagegeneration /lib /lib.usr-is-merged /lib32 /lib64 /lost+found /media /mnt /opt /proc /root /run /sbin /sbin.usr-is-merged /snap /srv /sys /tmp /usr /var background: rgba(0, 0, 0, 30%); */
+ background: #1e1e2e;
  border-radius: 0px 0px 4px 4px;
 }
 
