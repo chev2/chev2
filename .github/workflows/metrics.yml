@@ -26,21 +26,22 @@ jobs:
           # Options
           user: chev2
           template: classic
-          base: header, activity, community
+          #base: header, activity, community
+          base: header
           clean_workflows: all
-          config_display: large
+          # config_display: large
           config_octicon: yes
           config_order: base.header, base.activity+community, base.repositories, topics, languages, activity, licenses, pagespeed
           config_padding: 4, 8 + 11%
           config_timezone: America/Los_Angeles
           config_twemoji: yes
-          plugin_activity: yes
-          plugin_activity_days: 30
-          plugin_activity_filter: push, issue, pr, ref/create, ref/delete, release, review, fork, star, public
-          plugin_activity_limit: 5
-          plugin_activity_load: 300
-          plugin_activity_visibility: public
-          plugin_activity_skipped: chev2
+          # plugin_activity: yes
+          # plugin_activity_days: 30
+          # plugin_activity_filter: push, issue, pr, ref/create, ref/delete, release, review, fork, star, public
+          # plugin_activity_limit: 5
+          # plugin_activity_load: 300
+          # plugin_activity_visibility: public
+          # plugin_activity_skipped: chev2
           plugin_languages: yes
           plugin_languages_analysis_timeout: 15
           plugin_languages_analysis_timeout_repositories: 7.5
@@ -53,12 +54,12 @@ jobs:
           plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
-          plugin_pagespeed: yes
-          plugin_pagespeed_url: https://chev.sh/
-          plugin_topics: yes
-          plugin_topics_limit: 30
-          plugin_topics_mode: icons
-          plugin_topics_sort: starred
+          # plugin_pagespeed: yes
+          # plugin_pagespeed_url: https://chev.sh/
+          # plugin_topics: yes
+          # plugin_topics_limit: 30
+          # plugin_topics_mode: icons
+          # plugin_topics_sort: starred
           extras_css: |
             :root {
               --piborder-color: white;
