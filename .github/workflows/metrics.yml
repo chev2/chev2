@@ -66,11 +66,9 @@ jobs:
             }
 
             /* Darken background */
-            svg, foreignObject {
+            foreignObject {
               /* background: rgba(0, 0, 0, 30%); */
-              background: #1e1e2e;
               border-radius: 0px 0px 4px 4px;
-              border: 1px solid #313244;
             }
 
             /* Center various elements */
